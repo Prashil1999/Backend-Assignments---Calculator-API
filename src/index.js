@@ -21,7 +21,7 @@ app.post("/add",(req,res)=>{
     let n1=req.body.num1;
     let n2=req.body.num2;
     let message,sum,status;
-    if(typeof n1 !=="Number" || n1===undefined || n2===undefined || typeof n2 !=="Number"){
+    if(typeof n1 !=="number" || n1===undefined || n2===undefined || typeof n2 !=="number"){
         message="invalid data types";
         status="error";
         res.send({status,message,sum});
@@ -52,7 +52,7 @@ app.post("/sub",(req,res)=>{
     let n1=req.body.num1;
     let n2=req.body.num2;
     let message,difference,status;
-    if(typeof n1 !=="Number" || n1===undefined || n2===undefined || typeof n2 !=="Number"){
+    if(typeof n1 !=="number" || n1===undefined || n2===undefined || typeof n2 !=="number"){
         message="invalid data types";
         status="error";
         res.send({status,message,sum});
@@ -83,7 +83,7 @@ app.post("/multiply",(req,res)=>{
     let n1=req.body.num1;
     let n2=req.body.num2;
     let message,result,status;
-    if(typeof n1 !=="Number" || n1===undefined || n2===undefined || typeof n2 !=="Number"){
+    if(typeof n1 !=="number" || n1===undefined || n2===undefined || typeof n2 !=="number"){
         message="invalid data types";
         status="error";
         res.send({status,message,sum});
@@ -114,7 +114,7 @@ app.post("/division",(req,res)=>{
     let n1=req.body.num1;
     let n2=req.body.num2;
     let message,result,status;
-    if(typeof n1 !=="Number" || n1===undefined || n2===undefined || typeof n2 !=="Number"){
+    if(typeof n1 !=="number" || n1===undefined || n2===undefined || typeof n2 !=="number"){
         message="invalid data types";
         status="error";
         res.send({status,message,sum});
